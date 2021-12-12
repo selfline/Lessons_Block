@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Marvel', sans-serif;
+    font-weight: 700;
+    background-color: #020e28;
+    color: #ffffff;
+}
+.container {
+    padding: 100px 15px;
+}
+.bg-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    height: 770px;
+    background-image: url(https://cutewallpaper.org/21/star-wars-return-of-the-jedi-wallpaper/Wallpaper-Darth-Vader,-Jedi,-Darth-Vader,-lightsaber,-Sith-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px 5px #020e28, 0 0 30px 10px #2a3cad;
+    border-radius: 10px;
+}
+.content {
+    position: absolute;
+    padding: 80px 30px;
+    text-align: center;
+    border: 1px solid #4c6496;
+}
+.content h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.box-link {
+    display: flex;
+    gap: 30px;
+}
+.box-link a {
+    flex: 1;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.box-link a:nth-child(1) {
+    background-color: #303cc9;
+}
+
+.box-link a:nth-child(2) {
+    background-color: #870f2b;
+}
+.box-link a:nth-child(1):hover,
+.box-link a:nth-child(2):hover {
+    background-color: #020e28;
+    opacity: 0.7;
+}
+.box {
+    position: absolute;
+    width: 390px;
+    height: 390px;
+    border: 2px solid #2a3cad;
+}
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.box span::before {
+    content: '';
+    position: absolute;
+    background-color: #50dfdb;
+    width: 100%;
+    height: 2px;
+    animation: fade 4s linear infinite;
+}
+.box span:nth-child(1) {
+    transform: rotate(0deg);
+}
+.box span:nth-child(2) {
+    transform: rotate(90deg);
+}
+.box span:nth-child(3) {
+    transform: rotate(180deg);
+}
+.box span:nth-child(4) {
+    transform: rotate(270deg);
+}
+@keyframes fade {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    50.1% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
